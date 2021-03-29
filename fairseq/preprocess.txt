@@ -1,0 +1,6 @@
+#BART_PATH="$1"
+#TASK="$2"
+
+
+#rm -rf "$C:/Users/user2/git/python/NN/Fairseq/postprocessed/-bin/"
+python preprocess.py --source-lang "source" --target-lang "target" --trainpref "C:/Users/user2/git/python/NN/Fairseq/postprocessed/train.bpe" --validpref "C:/Users/user2/git/python/NN/Fairseq/postprocessed/val.bpe" --testpref "C:/Users/user2/git/python/NN/Fairseq/postprocessed/test.bpe" --destdir "C:/Users/user2/git/python/NN/Fairseq/postprocessed/-bin/" --workers 60 --srcdict "C:/Users/user2/git/python/NN/Fairseq/mbart.cc25.v2/dict.txt" --tgtdict "C:/Users/user2/git/python/NN/Fairseq/mbart.cc25.v2/dict.txt"
